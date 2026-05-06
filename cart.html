@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart - Nepali Treasures</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo-link">
+                <h1 class="logo">🇳🇵 Nepali Treasures</h1>
+            </a>
+            <nav aria-label="Main navigation">
+                <a href="index.html">Products</a>
+                <a href="cart.html" class="active cart-link" aria-label="Shopping cart">
+                    Cart <span id="cart-count" class="cart-badge" aria-live="polite">0</span>
+                </a>
+                <a href="settings.html" class="settings-link" aria-label="Settings">⚙️</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" class="container">
+        <h2>Your Shopping Cart</h2>
+        
+        <!-- Cart Items Container -->
+        <div id="cart-items" class="cart-container" aria-label="Cart items">
+            <!-- Cart items will be loaded here by JavaScript -->
+        </div>
+
+        <!-- Cart Summary & Checkout -->
+        <div class="cart-summary" id="checkout-section">
+            <div class="summary-row">
+                <span>Subtotal:</span>
+                <span id="cart-total" class="total-amount">£0.00</span>
+            </div>
+            <div class="delivery-info">
+                <p>🚚 International delivery from Nepal: 7-14 business days</p>
+                <p>📦 Free shipping on orders over £50</p>
+            </div>
+            <button id="checkout-btn" class="btn btn-primary btn-full">Proceed to Checkout</button>
+            <a href="index.html" class="btn btn-secondary btn-full">Continue Shopping</a>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Nepali Treasures - BSc Computer Science Final Year Project</p>
+                <p class="footer-note">Prototype with Haptic Feedback Integration | Raj Khatri - 2228573</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/products.js"></script>
+    <script src="js/haptics.js"></script>
+    <script src="js/audio.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>

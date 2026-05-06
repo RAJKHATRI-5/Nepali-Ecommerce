@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nepali Treasures - Authentic Products from Nepal</title>
+    <meta name="description" content="Authentic Nepali handicrafts, clothing, and spiritual items for the diaspora community. Experience culturally enriched online shopping with haptic feedback.">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Skip Navigation for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo-link">
+                <h1 class="logo">🇳🇵 Nepali Treasures</h1>
+            </a>
+            <nav aria-label="Main navigation">
+                <a href="index.html" class="active">Products</a>
+                <a href="cart.html" class="cart-link" aria-label="Shopping cart">
+                    Cart <span id="cart-count" class="cart-badge" aria-live="polite">0</span>
+                </a>
+                <a href="settings.html" class="settings-link" aria-label="Settings">⚙️</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" class="container">
+        <section class="hero">
+            <h2>Authentic Nepali Products for the Diaspora</h2>
+            <p>Connect with your heritage through traditional handicrafts, clothing, and spiritual items</p>
+        </section>
+
+        <!-- Search Bar -->
+        <section class="search-section" aria-label="Product search">
+            <div class="search-bar">
+                <input type="search" 
+                       id="search-input" 
+                       placeholder="Search products..." 
+                       aria-label="Search products"
+                       autocomplete="off">
+                <button class="search-clear-btn" onclick="clearSearch()" aria-label="Clear search">×</button>
+            </div>
+            <span id="results-count" class="results-count" aria-live="polite"></span>
+        </section>
+
+        <!-- Category Filters -->
+        <section id="filter-container" class="filter-section" aria-label="Product categories">
+            <!-- Category buttons will be loaded by JavaScript -->
+        </section>
+
+        <!-- Products Grid -->
+        <section id="products-grid" class="products-grid" aria-label="Product listing">
+            <!-- Products dynamically loaded -->
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Nepali Treasures - BSc Computer Science Final Year Project</p>
+                <p class="footer-note">Prototype with Haptic Feedback Integration | Raj Khatri - 2228573</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/products.js"></script>
+    <script src="js/haptics.js"></script>
+    <script src="js/audio.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
